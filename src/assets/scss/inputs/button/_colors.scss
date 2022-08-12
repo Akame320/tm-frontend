@@ -1,0 +1,25 @@
+@mixin th-cl-blue {
+  background-color: $tm-button-blue;
+  color: white;
+
+  &:hover {
+    background-color: $tm-button-blue-hover;
+  }
+
+  &:active {
+    background-color: $tm-button-blue-active;
+  }
+}
+
+@mixin th-cl-gradient {
+  background: linear-gradient(270deg, #EF98B7 0%, #8E6CF5 100%);
+  color: white;
+
+  &:hover {
+    background: linear-gradient(270deg, #8E6CF5 0%, #EF98B7 100%);
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

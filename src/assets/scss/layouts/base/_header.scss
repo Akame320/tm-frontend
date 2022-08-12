@@ -1,0 +1,95 @@
+.tm-app-header {
+  padding: 2rem 0;
+  box-shadow: 0px -1px 22px rgba(0, 0, 0, 0.08);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo-box-wrapper {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: #E2EFFC;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo-box {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: #0C56C8;
+  }
+
+  &__logo-label-wrapper {
+    margin-left: 1rem;
+  }
+
+  &__logo-label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $tm-text-black;
+  }
+
+  &__nav-wrapepr {
+
+  }
+
+  &__nav {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.tm-app-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__item-wrapper {
+    list-style-type: none;
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__item {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $tm-text-black;
+    text-decoration: none;
+    transition: all 0.05s linear;
+    
+    &--el-active {
+      color: #1465C0;
+    }
+
+    &:hover {
+      color: #1465C0;
+    }
+
+    &:active {
+      color: #0D47A1;
+    }
+  }
+}

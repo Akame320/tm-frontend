@@ -1,0 +1,14 @@
+@import "themes";
+@import "elems";
+@import "colors";
+
+.tm-app-button {
+  cursor: pointer;
+  transition: all 0.05s linear;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+}
