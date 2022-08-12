@@ -1,0 +1,9 @@
+@mixin tm-it-color-base() {
+  background-color: white;
+  color: $tm-input-text;
+  border: 2px solid $tm-input-border;
+
+  &:focus {
+    border-color: $tm-input-border-active;
+  }
+}

@@ -39,8 +39,12 @@ export default {
           name: 'About',
         },
         {
-          path: '/registration',
+          path: '/auth/registration',
           name: 'Registration',
+        },
+        {
+          path: '/auth/login',
+          name: 'Login',
         }
       ]
     }

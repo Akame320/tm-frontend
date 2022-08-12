@@ -1,0 +1,11 @@
+.tm-app-input-text {
+  &--el-base &{
+    &__elem {
+      width: 100%;
+      height: 4.3rem;
+
+      @include tm-it-color-base;
+      @include tm-it-theme-base;
+    }
+  }
+}

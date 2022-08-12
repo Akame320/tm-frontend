@@ -1,0 +1,13 @@
+@import "themes";
+@import "colors";
+@import "elems";
+
+.tm-app-input-text {
+  position: relative;
+
+  &__elem {
+    border-radius: 5px;
+    transition: all 0.05s linear;
+    outline: none;
+  }
+}
