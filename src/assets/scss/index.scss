@@ -4,8 +4,8 @@
 
 
 // layouts
-@import "./layouts/base/header";
-@import "./layouts/base/footer";
+@import "./layouts/base/main";
+@import "./layouts/auth/main";
 
 
 
@@ -21,3 +21,6 @@
 // inputs
 @import "./inputs/button/main";
 @import "./inputs/text/main";
+@import "./inputs/text/login";
+@import "./inputs/text/password";
+@import "./inputs/radio/main";

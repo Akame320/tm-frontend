@@ -6,17 +6,17 @@
 export default {
   name: "Button",
   props: {
-    elem: {
-      type: String,
-      default: ''
+    themes: {
+      type: Array,
+      default: () => []
     },
   },
   computed: {
     classes() {
       const list = ['tm-app-button']
+      if(!this.themes) return list
 
-      if(this.elem) list.push(`tm-app-button--el-${this.elem}`)
-
+      for (const theme of this.themes) list.push(`tm-app-button--${theme}`)
       return list
     }
   }

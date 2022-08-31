@@ -3,6 +3,7 @@ import About from "@/views/About";
 import Auth from "@/views/auth/Index";
 import Registration from "@/views/auth/Registration";
 import Login from "@/views/auth/Login";
+import More from "@/views/information/More";
 
 const routes = [
     {
@@ -29,6 +30,11 @@ const routes = [
         path: '/auth/login',
         name: 'Login',
         component: Login
+    },
+    {
+        path: '/information/more',
+        name: 'More',
+        component: More
     }
 ]
 

@@ -1,7 +1,3 @@
-@import "themes";
-@import "elems";
-@import "colors";
-
 .tm-app-button {
   cursor: pointer;
   transition: all 0.05s linear;
@@ -11,4 +7,65 @@
   justify-content: center;
 
   border: none;
+
+  &--sz-medium {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+
+  &--th-purple {
+    background: $tm-button-purple;
+    color: white;
+
+    &:hover {
+      background: $tm-button-purple-hover;
+    }
+
+    &:active {
+      opacity: $tm-button-purple-active;
+    }
+  }
+
+  &--th-gradient {
+    background: linear-gradient(270deg, #EF98B7 0%, #8E6CF5 100%);
+    color: white;
+
+    &:hover {
+      background: linear-gradient(270deg, #8E6CF5 0%, #EF98B7 100%);
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  &--th-blue {
+    background-color: $tm-button-blue;
+    color: white;
+
+    &:hover {
+      background-color: $tm-button-blue-hover;
+    }
+
+    &:active {
+      background-color: $tm-button-blue-active;
+    }
+  }
+
+  &--th-purple-ghost {
+    border: 2px solid $tm-button-purple;
+    color: $tm-button-purple;
+    background: transparent;
+
+    &:hover {
+      border-color: $tm-button-purple-hover;
+      color: $tm-button-purple-hover;
+    }
+
+    &:active {
+      border-color: $tm-button-purple-active;
+      color: $tm-button-purple-active;
+    }
+  }
 }

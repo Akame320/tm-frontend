@@ -1,11 +1,15 @@
 <template>
-  <div class="tm-app-input-text" :class="`tm-app-input-text--el-${elem}`">
-    <input
+  <div class="tm-app-input-text" :class="`tm-app-input-text--th-${theme}`">
+    <div class="">{{ error }}</div>
+    <div class="tm-app-input-text__elem-wrapper">
+      <input
         class="tm-app-input-text__elem"
         type="text"
-        :placeholder="title"
+        :placeholder="placeholder"
         :value="value"
         @input="$emit('input', $event.target.value)">
+    </div>
+
   </div>
 </template>
 
@@ -17,13 +21,17 @@ export default {
       type: String,
       required: true
     },
-    title: {
+    placeholder: {
       type: String,
       default: ''
     },
-    elem: {
+    theme: {
       type: String,
       default: 'base'
+    },
+    error: {
+      type: String,
+      default: ''
     }
   },
 }

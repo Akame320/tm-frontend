@@ -34,7 +34,7 @@
 
 <script>
 import Header from "@/components/layouts/base/Header";
-import Button from "@/components/common/buttons/Button";
+import Button from "@/components/common/inputs/buttons/Button";
 
 export default {
   name: 'Home',
